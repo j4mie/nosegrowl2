@@ -6,7 +6,7 @@ from nose.plugins import Plugin
 from pkg_resources import resource_filename
 
 
-__version__ = '0.1'
+__version__ = '0.2'
 
 
 START_TITLE = 'Starting tests...'
