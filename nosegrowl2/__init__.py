@@ -21,7 +21,7 @@ FAILURE_ICON = resource_filename('nosegrowl2', 'failure.png')
 
 
 def _check_growlnotify():
-    """Check whether the growlnotify command-line too is installed"""
+    """Check whether the growlnotify command-line tool is installed"""
     try:
         subprocess.check_call(
             ['growlnotify', '--version'],
