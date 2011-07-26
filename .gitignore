@@ -1,0 +1,11 @@
+*.pyc
+*.swp
+.DS_Store
+.idea
+build
+dist
+MANIFEST
+docs/_*
+*egg-info*
+runner.py
+tests.py
