@@ -1,4 +1,3 @@
-import os
 import datetime
 import subprocess
 from warnings import warn
