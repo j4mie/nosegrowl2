@@ -2,17 +2,15 @@
 
 **A simple Nose plugin for Growl notifications**
 
-Existing Growl plugins for Nose can be difficult to install, due to packaging problems
-and a dependency on the PyGrowl library, which is out of date on PyPI.
+Existing Growl plugins for Nose can be difficult to install, due to packaging problems and a dependency on the PyGrowl library, which is out of date on PyPI.
 
-This extremely simple plugin uses the command-line **growlnotify** tool to send its
-notifications. This should be installed from either
-[the official Growl site](http://growl.info/extras.php#growlnotify) or with
-[Homebrew](http://mxcl.github.com/homebrew/) (just run `brew install growlnotify`).
+This extremely simple plugin uses [gntplib](http://packages.python.org/gntplib/) to send its notifications.
 
 To use this plugin, install with `pip install nosegrowl2`, then run `nosetests --with-growl`.
 
 You may need to remove existing Nose Growl packages first.
+
+*Note*: prior to version 0.3, the `growlnotify` command-line tool was used to send notifications. As this is now deprecated and has been removed from Homebrew, nosegrowl2 now uses gntplib.
 
 ## (Un)license
 
